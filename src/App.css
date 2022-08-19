@@ -1,38 +1,117 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  
+}
+.content{
+  background-image: url("../src/images/background.jpg");
+  
+  color:darkolivegreen;
+  width: 80%;
+  height: 100vh;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  transition: width 3s, height 3s;
+  
+}
+.content:hover {
+  background-color:gray;
+  width: 100px;
+  height: 100px;
+}
+.content h1 , h2{
+  margin: 40px ;
+  font-size: 70px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 5rem;
+  text-shadow: 2px 2px brown;
+}
+.sidebar{
+  background-color: rgba(143, 75, 75, 0.7);
+  max-width: 20%;
+  height: 100vh;
+  overflow-y:scroll;
+  color: #fff;
+  padding: 10px;
   text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.info h1{
+  font-size: 30px;
+}
+h4 a{
+  text-decoration: none;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
+  font-weight: 2rem;
+}
+li a{
+  text-decoration: none;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.mypic{
+  height: 15rem;
+  max-width: 15rem;
+  margin: auto;
+  padding: auto;
+  opacity: 0.7;
+  justify-items: center;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  
+}
+.icons a{
+  font-size: 2rem;
+  color: #fff;
+  display: block;
+  margin: 3px;
+
+}
+.icons a :hover{
+  color: aliceblue;
+  padding: 5px;
+  border-bottom: 2px solid #fff;
+  font-size: 3rem;
+}
+.About, .timeline{
+  padding: 5px;
+  margin: 10px;
+  background-color: aliceblue;
+  
+}
+ .About h4{
+  text-align: center;
+  color: black;
+  border-bottom: 1px solid gray;
+}
+.About h2{
+  margin-left: 20px;
+  padding: 5px;
+  
+}
+.box p, h3, h4{
+  text-align: center;
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.box1, .box2, .box3{
+  width: 30%;
+  height: 25vh;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  float: left;
+  background-color: bisque;
+  border: 2px solid grey;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
